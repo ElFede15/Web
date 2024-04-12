@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karpender</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            background-image: url('Karpendente.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /* Evitar repetición de la imagen */
+        }
+        p {
+            background-color: rgba(43, 35, 35, 0.842);
+            color: white;
+            padding: 10px; /* Agrega espacio alrededor del texto */
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .rule-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+        .rule {
+            width: 45%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .rule:hover {
+            transform: scale(1.05);
+        }
+        .rule h2 {
+            color: #333;
+        }
+        /* Estilos para animaciones */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Estilos para enlaces */
+        a {
+            color: inherit; /* Hereda el color del texto del padre */
+            text-decoration: none; /* Elimina el subrayado predeterminado */
+            cursor: pointer; /* Cambia el cursor al hacer hover */
+        }
+        /* Estilos para footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="rules" class="fade-in">
+        <h2>Reglas</h2>
+        <p>pepe como estaaaaaaaaas</p>
+        <h2>Formas de juego</h2>
+        <div class="rule-container">
+            <div class="rule">
+                <a href="Con lore.html"><h3>Con Lore</h3></a>
+                <p>¡Sumérgete en la historia y el trasfondo de Karpender! Experimenta el juego con profundidad y narrativa.</p>
+                <p>Se alienta a los jugadores a crear personajes con historias elaboradas.</p>
+            </div>
+            <div class="rule">
+                <a href="Sin lore.html"><h3>Sin Lore</h3></a>
+                <p>¿Prefieres la acción directa? ¡Juega sin preocuparte por la historia y sumérgete directamente en la mecánica de juego!</p>
+                <p>Perfecto para los que quieren centrarse en la estrategia y la competición.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="grupo-1">
+            <div class="box"></div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Este videojuego a sido creado por: Guadalupe Sol Cobos - Luciana Caputo - Matias Nicolas Blutstein - Dago Sebastian Lopez - Nicolas - Tobias - Federico Rinaldi</p>
+                <p>Este videojuego fue creado sin fines lucrativos (<a href="https://www.argentina.gob.ar/normativa/nacional/ley-20628-17699">Ley N° 20.628</a>)</p>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Karpender</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    <!-- Script para animación fade-in -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var elements = document.querySelectorAll('.fade-in');
+            elements.forEach(function(element) {
+                element.style.opacity = 1;
+            });
+        });
+    </script>
+</body>
+</html>
+
+

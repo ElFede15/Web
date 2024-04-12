@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Texto Móvil</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Evitar que el contenido se desborde horizontalmente */
+            color: #fff; /* Color del texto */
+        }
+
+        /* Estilo del fondo */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('Karpendente.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Colocar detrás del contenido */
+        }
+
+        /* Estilo del contenido */
+        .content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del texto */
+            text-align: center; /* Centrar el texto */
+        }
+
+        /* Estilo del texto */
+        h1 {
+            margin-top: 0;
+        }
+
+        /* Estilo para párrafos */
+        p {
+            margin-bottom: 20px;
+        }
+        p {
+            background-color: rgba(43, 35, 35, 0.842);
+            color: white;
+            padding: 10px; /* Agrega espacio alrededor del texto */
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.881);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .grupo-1 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Juega con lore</h1>
+        <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo at tortor fermentum laoreet id a massa. Sed at enim id est rhoncus rhoncus. Mauris bibendum arcu vel ullamcorper rutrum.</p>
+        <p1>Nullam id orci id lectus ultricies consequat. Vestibulum sed tortor eu felis suscipit commodo. Sed suscipit orci quis metus venenatis dignissim.</p>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="grupo-1">
+            <div class="box"></div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Este videojuego ha sido creado por: Guadalupe Sol Cobos - Luciana Caputo - Matias Nicolas Blutstein - Dago Sebastian Lopez - Nicolas - Tobias - Federico Rinaldi</p>
+                <p>Este videojuego fue creado sin fines lucrativos (<a href="https://www.argentina.gob.ar/normativa/nacional/ley-20628-17699">Ley N° 20.628</a>)</p>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Karpender</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
